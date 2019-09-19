@@ -1,2 +1,2 @@
-# RPG-Fighting-Game
-HW4 RPG Fighting Game
+# RPG-Star-Wars
+HW4 RPG Star Wars
