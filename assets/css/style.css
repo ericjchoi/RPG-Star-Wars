@@ -1,23 +1,27 @@
 /* HW4 Star Wars RPG */
 .mainContainer {
-    width: 900px;
+    width: 700px;
     margin: 10px auto;
 }
 .selector-for-some-widget {
     box-sizing: content-box;
 }
 #messageBtn1, #messageBtn2, #messageBtn3 {
-    width: 33.02%;
-    margin: 2px auto;
+    width: 32.9%;
+    margin: 10px auto;
 }
 .card-header, .card-footer {
     text-align: center;
+    background-color: rgb(187, 195, 199);
 }
 img {
     width: 100%;
 }
-.card-body {
-
+#characterBank {
+    margin: 10px auto;
+}
+#characterBank {
+    opacity: 0.95;
 }
 /*
 body {

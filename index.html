@@ -14,36 +14,38 @@
     <title>HW4 STAR WARS RPG</title>
 </head>
 
-<body>
+<body background="assets/images/milleniumFalcon.jpeg">
     <div class="mainContainer">
-        <button id="titleBtn" type="button" class="btn btn-danger btn-lg btn-block">Star Wars RPG</button>
-        <button id="messageBtn1" type="button" class="btn btn-warning btn-lg">W I N !</button>
-        <button id="messageBtn2" type="button" class="btn btn-warning btn-lg">Message here !!!!</button>
-        <button id="messageBtn3" type="button" class="btn btn-warning btn-lg">L O S T !</button>
+        <button id="titleBtn" type="button" class="btn btn-info btn-lg btn-block">Star Wars RPG - May the force be with you !!</button>
+        <button id="messageBtn1" type="button" class="btn btn-warning btn-lg">Attack Power:&nbsp;</button>
+        <button id="messageBtn2" type="button" class="btn btn-warning btn-lg">GoodLuck/win/lost</button>
+        <button id="messageBtn3" type="button" class="btn btn-warning btn-lg">Counter Attack:&nbsp;</button>
         <div class="card-group">
             <div class="card">
                 <div class="card-body">
-                        <img src="assets/images/character1.png" id="yourCharacter">
+                    <img src="assets/images/character1.png" id="yourCharacter">
                 </div>
-                <div class="card-footer">Your HP:&nbsp;<span>3499</span></div>
+                <h1>
+                    <div class="card-footer"><span id="playerHp">3499</span></div>
+                </h1>
             </div>
             <div class="card">
-                <div class="card-header">Sum</div>
                 <div class="card-body">
-                    <p id="sum">ㅂ재댜배쟏개ㅔㅑㅂㅈㄷㄱㅈㅂㄷㄱㅂㅈㄷㄹㅈㅂㄷ</p>
-                    <button type="button" class="btn btn-primary">One more round</button>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary">Start Over</button>
+                    <p id="win">Win:&nbsp;<span id="winNum">12</span></p>
+                    <p id="lose">Lose:&nbsp;<span id="loseNum">1</span></p>
+                    
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <img src="assets/images/character6.png" id="yourCharacter">
                 </div>
-                <div class="card-footer">Defender's HP:&nbsp;<span>3499</span></div>
+                <h1>
+                <div class="card-footer"><span id="defenderHp">9999</span></div>
+                </h1>
             </div>
         </div>
-        <div class="card-group">
+        <div class="card-group" id="characterBank">
             <div class="card">
                 <div class="card-body">
                     <img src="assets/images/character1.png" id="characterBank1">
@@ -80,10 +82,13 @@
                 </div>
                 <div class="card-footer">HP:&nbsp;<span>343</span></div>
             </div>
-
-
         </div>
+        <button type="button" class="btn btn-primary">Select Player</button>
+        <button type="button" class="btn btn-primary">Select Defendant</button>
+        <button type="button" class="btn btn-danger">Click to Attack !!</button>
+        <button type="button" class="btn btn-danger">Start Over</button>
 
+        
 
 
 
