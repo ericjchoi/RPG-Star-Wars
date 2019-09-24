@@ -16,168 +16,83 @@
 
 <body background="assets/images/milleniumFalcon.jpeg">
     <div class="mainContainer">
-        <button id="titleBtn" type="button" class="btn btn-info btn-lg btn-block">Star Wars RPG - May the force be with you !!</button>
-        <button id="messageBtn1" type="button" class="btn btn-warning btn-lg">Attack Power:&nbsp;</button>
-        <button id="messageBtn2" type="button" class="btn btn-warning btn-lg">GoodLuck/win/lost</button>
-        <button id="messageBtn3" type="button" class="btn btn-warning btn-lg">Counter Attack:&nbsp;</button>
+        <button id="titleBtn" type="button" class="btn btn-info btn-lg btn-block">Star Wars RPG - May the force be with
+            you !!</button>
+        <button id="messageBtn1" type="button" class="btn btn-secondary btn-lg" style="opacity: 0;">
+            <span id="playerAP"></span></button>
+        <button id="messageBtn2" type="button" class="btn  btn-lg"></button>
+        <button id="messageBtn3" type="button" class="btn btn-secondary btn-lg" style="opacity: 0;">
+            <span id="defenderAP"></span></button>
         <div class="card-group">
-            <div class="card">
+            <div class="card" id="playerBox" style="opacity: 0;">
                 <div class="card-body">
-                    <img src="assets/images/character1.png" id="yourCharacter">
+                    <img src="assets/images/character0.png" id="playerImg">
                 </div>
                 <h1>
-                    <div class="card-footer"><span id="playerHp">3499</span></div>
+                    <div class="card-footer"><span id="playerHp"></span></div>
                 </h1>
             </div>
-            <div class="card">
+            <div class="card" id="statusBox">
                 <div class="card-body">
-                    <p id="win">Win:&nbsp;<span id="winNum">12</span></p>
-                    <p id="lose">Lose:&nbsp;<span id="loseNum">1</span></p>
-                    
+                    <p id="winLabel">Win:&nbsp;<span id="win"></span></p>
+                    <p id="loseLabel">Lose:&nbsp;<span id="lose"></span></p>
+                    <p id="gameStatusMessage"></p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="defenderBox" style="opacity: 0;">
                 <div class="card-body">
-                    <img src="assets/images/character6.png" id="yourCharacter">
+                    <img src="assets/images/character0.png" id="defenderImg">
                 </div>
                 <h1>
-                <div class="card-footer"><span id="defenderHp">9999</span></div>
+                    <div class="card-footer"><span id="defenderHp"></span></div>
                 </h1>
             </div>
         </div>
         <div class="card-group" id="characterBank">
-            <div class="card">
+            <div class="card" id="img1Box">
                 <div class="card-body">
-                    <img src="assets/images/character1.png" id="characterBank1">
+                    <img src="assets/images/character1.png" id="img1">
                 </div>
-                <div class="card-footer">HP:&nbsp;<span>343</span></div>
+                <div class="card-footer">HP:&nbsp;<span id="character1hp"></span></div>
             </div>
-            <div class="card">
+            <div class="card" id="img2Box">
                 <div class="card-body">
-                    <img src="assets/images/character2.png" id="characterBank1">
+                    <img src="assets/images/character2.png" id="img2">
                 </div>
-                <div class="card-footer">HP:&nbsp;<span>343</span></div>
+                <div class="card-footer">HP:&nbsp;<span id="character2hp"></span></div>
             </div>
-            <div class="card">
+            <div class="card" id="img3Box">
                 <div class="card-body">
-                    <img src="assets/images/character3.png" id="characterBank1">
+                    <img src="assets/images/character3.png" id="img3">
                 </div>
-                <div class="card-footer">HP:&nbsp;<span>343</span></div>
+                <div class="card-footer">HP:&nbsp;<span id="character3hp"></span></div>
             </div>
-            <div class="card">
+            <div class="card" id="img4Box">
                 <div class="card-body">
-                    <img src="assets/images/character4.png" id="characterBank1">
+                    <img src="assets/images/character4.png" id="img4">
                 </div>
-                <div class="card-footer">HP:&nbsp;<span>343</span></div>
+                <div class="card-footer">HP:&nbsp;<span id="character4hp"></span></div>
             </div>
-            <div class="card">
+            <div class="card" id="img5Box">
                 <div class="card-body">
-                    <img src="assets/images/character5.png" id="characterBank1">
+                    <img src="assets/images/character5.png" id="img5">
                 </div>
-                <div class="card-footer">HP:&nbsp;<span>343</span></div>
+                <div class="card-footer">HP:&nbsp;<span id="character5hp"></span></div>
             </div>
-            <div class="card">
+            <div class="card" id="img6Box">
                 <div class="card-body">
-                    <img src="assets/images/character6.png" id="characterBank1">
+                    <img src="assets/images/character6.png" id="img6">
                 </div>
-                <div class="card-footer">HP:&nbsp;<span>343</span></div>
+                <div class="card-footer">HP:&nbsp;<span id="character6hp"></span></div>
             </div>
         </div>
-        <button type="button" class="btn btn-primary">Select Player</button>
-        <button type="button" class="btn btn-primary">Select Defendant</button>
-        <button type="button" class="btn btn-danger">Click to Attack !!</button>
-        <button type="button" class="btn btn-danger">Start Over</button>
-
-        
-
-
-
-
+        <button type="button" class="btn btn-primary" id="selectPlayer">Select Player</button>
+        <button type="button" class="btn btn-primary" id="selectDefender">Select Defender</button>
+        <button type="button" class="btn btn-danger" id="attackID">Click to Attack !!!!!</button>
+        <button type="button" class="btn btn-warning" id="restartID">Restart Game</button>
+        <button type="button" class="btn btn-success" id="anotherRound">Another Round</button>
     </div>
-    <!-- <div class="mainContainer">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4"><strong>Crystal Game</strong></h1><br>
-                <p class="lead">
-                    <h2>Match the given number by clicking the gem stones.</h2>
-                </p>
-            </div>
-        </div>
-        <button id="continueBtn" type="button" class="btn btn-danger btn-lg btn-block">Click for another round</button>
-        <div class="card-group">
-            <div class="card">
-                <div class="card-header">Match</div>
-                <div class="card-body">
-                    <h1>
-                        <p id="targetNumber">
-                        </p>
-                    </h1>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">Sum</div>
-                <div class="card-body">
-                    <h1>
-                        <p id="sum"></p>
-                    </h1>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">Score</div>
-                <div class="card-body">
-                    <h5>
-                        <p>Wins:&nbsp;</p><span id="win"></span><br>
-                        <p>Loses:&nbsp;</p><span id="lose"></span>
-                    </h5>
-                </div>
-            </div>
-        </div>
-        <div class="card-group">
-            <div class="card">
-                <div class="card-body">
-                    <img src="assets/images/bluegem.jpeg" class="card-img-top gem0">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <img src="assets/images/redgem.png" class="card-img-top gem1">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <img src="assets/images/diamondgem.png" class="card-img-top gem2">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <img src="assets/images/yellowgem.png" class="card-img-top gem3">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <img src="assets/images/greengem.png" class="card-img-top gem4">
-                </div>
-            </div>
-        </div>
-        <div class="card-group">
-            <div class="card">
-                <div class="card-body">
-                    <h3>
-                        <p id="message">
-                        </p>
-                    </h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>
-                        <div id="startOver">
-                        </div>
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
