@@ -27,4 +27,4 @@ You will have a warning message if you click attack button before choosing both 
 
 If you lose once, game is over and all the buttons are locked except the "Restart Game" button. You can only restart at this point.
 
-If you win 5 times of battle, Game will be stoped and buttons are locked except the "Restart Game" button.
+If you win 5 times of battle, game will be stoped and buttons are locked except the "Restart Game" button.
