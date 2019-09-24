@@ -21,10 +21,10 @@ Player inherits previous round's health power.
 
 Player's attack power keeps increases.
 
-Defenders original attack power stays the same, but randomly generated weight number will be added to counter attack power each time.
+Defender's original attack power stays the same, but randomly generated weight number will be added to counter attack power each time.
 
 You will have a warning message if you click attack button before choosing both player and defender.
 
 If you lose once, game is over and all the buttons are locked except the "Restart Game" button. You can only restart at this point.
 
-If you win 5 times of battle, Game stoped and buttons are locked except the "Restart Game" button.
+If you win 5 times of battle, Game will be stoped and buttons are locked except the "Restart Game" button.
